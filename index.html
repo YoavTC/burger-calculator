@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Burger Score Calculator</h1>
+    <div>
+        <h2>Measurment Descriptions:</h2>
+        0/5: terrible <br>
+        1/5: bad yet edibale <br>
+        2/5: ok, nothing special <br>
+        3/5: ok, some special <br>
+        4/5: fine <br>
+        5/5: good <br>
+        6/10: very good <br>
+        7/10: excellent <br>
+        8/10: incredible <br>
+        9/10: like no other <br>
+        10/10: perfection <br>
+    </div>
+
+
+    <div>
+        <h2>Parameters:</h2>
+        <div class="parameter">
+            <label for="meatJuiciness">Meat Juiciness:</label>
+            <input type="range" id="meatJuiciness" name="numberInput" min="0" max="10" value="0">
+            <span class="valueDisplay">0</span>
+        </div>
+
+        <div class="parameter">
+            <label for="sauceTaste">Sauce Taste:</label>
+            <input type="range" id="sauceTaste" name="numberInput" min="0" max="10" value="0">
+            <span class="valueDisplay">0</span>
+        </div>
+
+        <div class="parameter">
+            <label for="breadTaste">Bread Taste:</label>
+            <input type="range" id="breadTaste" name="numberInput" min="0" max="10" value="0">
+            <span class="valueDisplay">0</span>
+        </div>
+
+        <div class="parameter">
+            <label for="breadDurability">Bread Durability:</label>
+            <input type="range" id="breadDurability" name="numberInput" min="0" max="10" value="0">
+            <span class="valueDisplay">0</span>
+        </div>
+
+        <div class="parameter">
+            <label for="vegetableFreshness">Vegetable Freshness:</label>
+            <input type="range" id="vegetableFreshness" name="numberInput" min="0" max="10" value="0">
+            <span class="valueDisplay">0</span>
+        </div>
+
+        <div class="parameter">
+            <label for="baconCheese">Bacon & Cheese Taste:</label>
+            <input type="range" id="baconCheese" name="numberInput" min="0" max="10" value="0">
+            <span class="valueDisplay">0</span>
+        </div>
+
+        <div class="parameter">
+            <label for="overallTaste">Overall Taste:</label>
+            <input type="range" id="overallTaste" name="numberInput" min="0" max="25" value="0">
+            <span class="valueDisplay">0</span>
+        </div>
+    </div>
+    
+    <div>
+
+    </div>
+
+
+    <div id="buttons">
+        <button onclick="calculateBurgerScore()">Calculate</button>
+        <button onclick="resetParameters()">Reset</button>
+    </div>
+    <h1 id="score">Score: 0.00</h1>
+
+    <ul id="toplist">Top Burger Ranking List:</ul>
+
+
+    <script src="code.js"></script>
+    <script src="list.js"></script>
+</body>
+</html>

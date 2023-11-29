@@ -1,0 +1,117 @@
+* {
+    -webkit-appearance: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.parameter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.parameter label {
+    width: 200px;
+}
+
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2e8cf;
+    color: #386641;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 38px;
+    color: #bc4749;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: bolder;
+    color: #6a994e;
+    margin-top: 20px;
+}
+
+input[type="range"] {
+    width: 150px;
+}
+
+#overallTaste {
+    width: 350px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #a7c957;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    background: #bc4749;
+ }
+
+.valueDisplay {
+    font-weight: bold;
+    color: #a7c957;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #6a994e;
+    color: #f2e8cf;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #386641;
+}
+
+#score {
+    font-size: 28px;
+    color: #bc4749;
+    margin-top: 20px;
+}
+
+ul {
+    font-weight: bolder;
+}
+
+li {
+    font-weight: 100;
+    color: #bc4749;
+}
+
+#toplist {
+    position: fixed;
+    top: 100px; /* Adjust the top spacing as needed */
+    right: 500px; /* Adjust the right spacing as needed */
+    list-style: none; /* Remove default list styles */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #6a994e; /* Adjust text color as needed */
+    font-size: 250%;
+}
+
+img {
+    scale: 250%;
+    transform: translateY(-2px);
+    padding-right: 5px;
+}
